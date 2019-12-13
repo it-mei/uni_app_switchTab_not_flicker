@@ -1,0 +1,33 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh":true
+			}
+		}
+	    ,{
+            "path" : "pages/zhanwei/zhanwei",
+            "style" : {}
+        }
+    ],
+	"tabBar": {
+		"color": "#C1C0C9",
+		"selectedColor": "#FE8B1E",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "首页"
+			},{//这个是占位置用的，因为微信限制了使用tabbar的话，这里必须在两个，五个以下
+				"pagePath": "pages/zhanwei/zhanwei",
+				"text": "站位用的"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}
